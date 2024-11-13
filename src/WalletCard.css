@@ -1,0 +1,59 @@
+/* src/WalletCard.css */
+
+.walletCard {
+    margin: 2rem auto; /* 上下间距为 2rem，左右自动居中 */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* 边框样式 */
+    border-radius: 10px; /* 更大的圆角 */
+    background-color: #3a3f47; /* 框的背景色 */
+    padding: 25px; /* 内边距 */
+    width: 400px; /* 固定宽度 */
+    text-align: center; /* 文字居中 */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* 增加阴影 */
+    color: #ffffff; /* 字体颜色 */
+}
+
+.title {
+    font-size: 2em; /* 标题字体大小 */
+    font-weight: 700; /* 加粗字体 */
+    color: #f1c40f; /* 明亮颜色 */
+    margin-bottom: 15px; /* 增加底部间距 */
+}
+
+.status {
+    font-size: 1.1em; /* 增大状态字体大小 */
+    color: #2ecc71; /* 绿色 */
+    margin: 10px 0; /* 上下间距 */
+}
+
+.address {
+    font-size: 0.9em; /* 地址部分的字体大小 */
+    color: #ecf0f1; /* 浅色 */
+    margin: 10px 0; /* 上下间距 */
+}
+
+.balance {
+    font-size: 1em; /* 统一字样字体大小 */
+    margin: 10px 0; /* 上下间距 */
+    color: #e74c3c; /* 红色，用于警告 */
+}
+/* 统一标题和文本的样式 */
+h4, h3 {
+    margin: 5px 0; /* 减小标题和文本的上下边距 */
+    font-size: 1.2em; /* 可以适当减小字体大小 */
+}
+
+/* 按钮样式 */
+.connectButton {
+    margin: 5px 0; /* 按钮的上下边距 */
+    padding: 8px 16px; /* 减小按钮内边距 */
+}
+
+/* 错误信息样式 */
+.errorMessage {
+    margin-top: 5px; /* 错误信息的上边距 */
+    font-size: 0.9em; /* 错误信息字体大小 */
+}
+.accountDisplay h3 {
+    font-size: 0.8em; /* 将字体大小调小 */
+    margin: 5px 0; /* 调整上下边距 */
+}

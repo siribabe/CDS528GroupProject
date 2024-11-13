@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif; /* 使用 sans-serif 作为备选字体 */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.app {
+    display: flex;
+    flex-direction: column; /* 确保元素垂直排列 */
+    align-items: center; /* 水平居中 */
+    min-height: 100vh;
+    color: white;
+    background: linear-gradient(135deg, #0b004e, #1d152f, #002834); /* 改变背景渐变角度 */
+}
+
+h1 {
+    font-size: 32px; /* 增大标题字体 */
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* 添加文字阴影 */
+}
+
+/* 容器样式 */
+.history-query {
+    margin-top: 20px;
+    width: 100%; /* 占满全宽 */
+    max-width: 600px; /* 设置最大宽度 */
+    background: rgba(255, 255, 255, 0.1); /* 半透明背景 */
+    padding: 20px; /* 增加内边距 */
+    border-radius: 10px; /* 圆角 */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* 阴影效果 */
+    text-align: center; /* 使内容居中 */
+}
+
+/* 按钮样式 */
+button {
+    background-color: #800080; /* 紫色 */
+    color: white;
+    padding: 12px 24px; /* 增加内边距 */
+    border: none;
+    border-radius: 8px; /* 圆角 */
+    cursor: pointer;
+    margin: 10px 0; /* 上下间距为10px，左右间距为0 */
+    display: inline-block; /* 使按钮为行内块元素 */
+    text-align: center; /* 使文本居中 */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* 添加平滑过渡效果 */
+}
+/* 专门为 Connect Wallet 按钮设置样式 */
+.connect-wallet-button {
+    background-color: #800080; /* 默认背景色 */
+    color: white; /* 字体颜色 */
+    padding: 12px 24px; /* 内边距 */
+    border: none; /* 去除边框 */
+    border-radius: 8px; /* 圆角 */
+    cursor: pointer; /* 鼠标指针样式 */
+    margin: 10px 0; /* 上下间距 */
+    display: inline-block; /* 使按钮为行内块元素 */
+    text-align: center; /* 文本居中 */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* 平滑过渡效果 */
+}
+
+/* 悬停时的样式 */
+.connect-wallet-button:hover {
+    background-color: #9932CC; /* 悬停时的背景颜色 */
+    transform: scale(1.05); /* 悬停时放大效果 */
+}
+
+button:hover {
+    background-color: #9932CC; /* 悬停时的背景颜色 */
+    transform: scale(1.05); /* 悬停时放大效果 */
+}
+
+/* 价格显示样式 */
+.price-display {
+    font-size: 20px; /* 增大字体 */
+    color: #ffdd57; /* 亮色 */
+    margin: 10px 0;
+}
+
+
+.history-query input {
+    width: 100%; /* 占满父容器宽度 */
+    padding: 12px; /* 增加内边距 */
+    margin: 5px 0; /* 上下间距为5px，左右不设置 */
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease; /* 添加平滑过渡效果 */
+}
+
+.history-query input:focus {
+    border-color: #800080; /* 获取焦点时的边框颜色 */
+    outline: none; /* 去掉默认的外边框 */
+}
+
+.history-query button {
+    background-color: #2196F3;
+    color: white;
+    padding: 12px 24px; /* 增加内边距 */
+    border: none;
+    border-radius: 8px; /* 增大圆角 */
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%; /* 让按钮占满全宽 */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* 添加平滑过渡效果 */
+}
+
+.history-query button:hover {
+    background-color: #0b7dda; /* 悬停时的背景颜色 */
+    transform: scale(1.05); /* 悬停时放大效果 */
+}
+
+/* 结果显示样式 */
+.result {
+    font-size: 18px; /* 增大字体 */
+    color: #ffdd57; /* 亮色 */
+    margin-top: 20px;
+}
+
+/* 输入框样式 */
+input[type="text"] {
+    width: 100%; /* 占满父容器宽度 */
+    padding: 12px; /* 增加内边距 */
+    margin: 5px 0; /* 上下间距为5px，左右不设置 */
+    display: block; /* 使输入框成为块级元素，以便居中 */
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    text-align: center; /* 使文本居中 */
+    transition: border-color 0.3s ease; /* 添加平滑过渡效果 */
+}
+
+input[type="text"]:focus {
+    border-color: #800080; /* 获取焦点时的边框颜色 */
+    outline: none; /* 去掉默认的外边框 */
+}
+
+/* 文本区域样式 */
+textarea {
+    width: 100%; /* 占满父容器宽度 */
+    height: 200px; /* 高度200px */
+    margin-top: 10px; /* 顶部边距 */
+    padding: 10px; /* 内边距 */
+    border: 1px solid #ccc; /* 灰色实线边框 */
+    border-radius: 4px; /* 圆角 */
+    resize: none; /* 禁止用户调整大小 */
+    background-color: rgba(255, 255, 255, 0.1); /* 半透明背景 */
+}
+
+/* 代码块样式 */
+pre {
+    background-color: rgba(249, 249, 249, 0.1); /* 半透明背景颜色 */
+    border: 1px solid #ccc; /* 灰色实线边框 */
+    padding: 10px; /* 内边距 */
+    margin-top: 20px; /* 顶部边距 */
+    white-space: pre-wrap; /* 保持格式并允许换行 */
+    word-wrap: break-word; /* 强制单词换行 */
+}
+
+/* 信息显示样式 */
+.info-display {
+    font-size: 12px; /* 字体变小 */
+    color: #800080; /* 紫色 */
+    text-align: center; /* 居中 */
+    margin-top: 20px;
+}
+
+.result-title {
+    color: #ff0055; /* 查询标题颜色 */
+    border: 2px solid #ff0055; /* 添加边框 */
+    padding: 10px; /* 添加内边距 */
+    border-radius: 5px; /* 圆角效果 */
+    margin-bottom: 10px; /* 下边距 */
+}
+
+.query-result {
+    color: #00ff99; /* 查询结果的颜色 */
+    font-weight: bold;
+    border: 2px solid #00ff99; /* 添加边框 */
+    padding: 10px; /* 添加内边距 */
+    border-radius: 5px; /* 圆角效果 */
+    margin-bottom: 20px; /* 下边距 */
+}
